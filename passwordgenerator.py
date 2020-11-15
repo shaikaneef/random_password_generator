@@ -3,13 +3,13 @@ import random
 def Password_Generator():
 
     lower_case=string.ascii_lowercase # all the charecters from a-z
-    #print(s1)
+    
     upper_case=string.ascii_uppercase # all the charecters from A-Z
-    #print(s2)
+
     numbers=string.digits # integer values from 0-9
-    #print(s3)
+
     special_charecters=string.punctuation  # all the special charecters 
-    #print(s4)
+
     
     password=[]
     password.extend(list(lower_case))
@@ -17,7 +17,7 @@ def Password_Generator():
     password.extend(list(numbers))
     password.extend(list(special_charecters))
     random.shuffle(password)
-    #print("".join(s[0:plen]))
+  
     print("Your password is : ")
     print("".join(random.sample(password,password_length)))
 
